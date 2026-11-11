@@ -1,45 +1,113 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-    <title>نافس الذكي للرياضيات | السادس الابتدائي</title>
-    <style>
-        :root{--bg:#f4f8f6;--c:#fff;--ink:#1d2b27;--mu:#66786f;--ln:#dfe9e4;--p:#0f7f68;--pl:#e4f4ee;--r:#d64d68;--rl:#fff0f2;--al:#fff0f2}
-        @media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1d19;--c:#18302a;--ink:#eaf6f1;--mu:#a9c4ba;--ln:#2c4c40;--p:#20b296;--pl:#12352d;--r:#f17084;--rl:#2d181c;--al:#2d181c}}
-        body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,'Segoe UI',sans-serif;line-height:1.7}
-        .w{max-width:760px;margin:auto;padding:12px}
-        header{background:linear-gradient(120deg,#0b3d33,#0f7f68);color:#fff;border-radius:18px;padding:16px}
-        h1{font-size:19px;margin:0}h2,h3{margin:6px 0}
-        input{width:100%;box-sizing:border-box;border:0;border-radius:10px;padding:9px;margin-top:8px;font:inherit}
-        .card{background:var(--c);border:1px solid var(--ln);border-radius:12px;padding:12px;margin:10px 0}
-        .hd{display:flex;gap:10px;align-items:center}
-        button{font:inherit;cursor:pointer;border:1px solid var(--ln);background:var(--c);color:var(--ink);border-radius:12px;padding:10px;margin:8px 0}.hint{background:var(--al)}
-        .pri{background:var(--p);color:#fff;border-color:var(--p)}.ok{background:var(--pl)!important;border-color:var(--p)}.no{background:var(--rl)!important;border-color:var(--r)}
-        #op button{display:block;width:100%;text-align:right;margin:6px 0}
-        .tag{display:inline-block;background:var(--pl);color:var(--p);border-radius:20px;padding:2px 10px;font-size:12px;font-weight:bold}
-        .box{background:var(--pl);border-radius:12px;padding:10px;margin:8px 0}.hint{background:var(--al)}
-        .big{font-size:40px;text-align:center}.bar{height:8px;background:var(--ln);border-radius:8px;margin:6px 0}.bar i{display:block;height:100%;border-radius:8px;background:var(--p)}
-        table{width:100%;border-collapse:collapse;font-size:13px}td,th{border:1px solid var(--ln);padding:5px;text-align:center}
-        footer{text-align:center;color:var(--mu);font-size:12px;padding:12px}.pp{display:none}
-        @media print{.np,footer{display:none!important}.pp{display:block}body{background:#fff;color:#000}}
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>نافس الذكي للرياضيات | السادس الابتدائي</title>
+<style>
+:root{--bg:#f4f8f6;--c:#fff;--ink:#1d2b27;--mu:#66786f;--ln:#dfe9e4;--p:#0f7f68;--pl:#e4f4ee;--r:#d64d68;--rl:#fff0f2;--al:#fff6e3;padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0f1d19;--c:#18302a;--ink:#eaf6f1;--mu:#a9c4ba;--ln:#2c4a41;--pl:#1f4a3f;--rl:#43202b;--al:#3d3412}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tahoma,'Segoe UI',sans-serif;line-height:1.7}
+.w{max-width:760px;margin:auto;padding:12px}
+header{background:linear-gradient(120deg,#0b3d33,#0f7f68);color:#fff;border-radius:18px;padding:16px}
+h1{font-size:19px;margin:0}h2,h3{margin:6px 0}
+input{width:100%;box-sizing:border-box;border:0;border-radius:10px;padding:9px;margin-top:8px;font:inherit}
+.card{background:var(--c);border:1px solid var(--ln);border-radius:16px;margin:10px 0;padding:12px}
+.hd{display:flex;gap:10px;align-items:center}
+button{font:inherit;cursor:pointer;border:1px solid var(--ln);background:var(--c);color:var(--ink);border-radius:12px;padding:9px 12px;margin:3px}
+.pri{background:var(--p);color:#fff;border-color:var(--p)}.ok{background:var(--pl)!important;border-color:var(--p)}.no{background:var(--rl)!important;border-color:var(--r)}
+#op button{display:block;width:100%;text-align:right;margin:6px 0}
+.tag{display:inline-block;background:var(--pl);color:var(--p);border-radius:20px;padding:2px 10px;font-size:12px;font-weight:700}
+.box{background:var(--pl);border-radius:12px;padding:10px;margin:8px 0}.hint{background:var(--al)}
+.big{font-size:40px;text-align:center}.bar{height:8px;background:var(--ln);border-radius:8px;margin:6px 0}.bar i{display:block;height:8px;background:var(--p);border-radius:8px}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{border:1px solid var(--ln);padding:5px;text-align:center}
+footer{text-align:center;color:var(--mu);font-size:12px;padding:12px}.pp{display:none}
+@media print{.np,footer{display:none!important}.pp{display:block}body{background:#fff;color:#000}}
+</style>
 </head>
 <body>
 <div class="w">
-    <header class="np"><h1>نافس الذكي للرياضيات ، الصف السادس الابتدائي <small>الفصل الدراسي الأول 1448 هـ</small></h1><button id="tb" style="margin:8px 0 0" class="pri">لوحة المعلمة</button></header>
-    <main id="m"></main>
-    <footer>المعلمة عبير بنت جبران الشهراني ، المدرسة الابتدائية السابعة والأربعون ، المديرة حامدة الغامدي</footer>
+<header class="np"><h1>🧮 نافس الذكي للرياضيات</h1><small>الصف السادس الابتدائي · الفصل الدراسي الأول 1448هـ</small>
+<input id="nm" placeholder="✏️ اكتبي اسمك الثلاثي هنا"><button id="tb" style="margin:8px 0 0">🔒 لوحة المعلمة</button></header>
+<main id="m"></main>
+<footer>المعلمة عبير بنت جبران الشهراني · المدرسة الابتدائية السابعة والأربعون · المديرة حامدة الغامدي</footer>
 </div>
 <script>
-    const SHEET_URL="https://script.google.com/macros/s/AKfycbyE2L7b1eB41J1ibJnXOuvSBMRriUshRuPrB-IVsnOHhgRpp_hMGE1eMz5T66QP0_b6/exec";
-    const $ = i => document.getElementById(i), R = (a,b)=>a+Math.floor(Math.random()*(b-a+1)), P = a=>[R(0,a.length-1)];
-    const sh = a => {for(let i=a.length-1; i>0; i--) {const j=R(0,i);[a[i],a[j]]=[a[j],a[i]]} return a;};
-    const f = n=>String((+n).toFixed(2)), g = (a,b)=>b?g(b,a%b):a, l = (a,b)=>a*b/g(a,b);
-    const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\'':'&#39;','"':'&quot;'}[c]));
-    function Q(u,q,c,w,e){const c=String(c);const o=[c];w.map(String).forEach(x=>{if(!o.includes(x)&&o.length<4)o.push(x)});for(let k=4;o.length<4;k++){let v=String(k);if(!o.includes(v))o.push(v)}sh(o);return{n:u,"i":q,"c":c,"w":o}}
-    const T=[
-        ()=>const b=R(2,5),e=R(2,4),c=b**e;return Q("ما قيمة $\" + ${b}<sup>${e}</sup> $",c,[b*e,b*e,b**(e-1),c+b],"${b}<sup>${e}</sup> ثم نجمع",a+b*c,[(a+b)*c,a+b+c,a*b+c,"${b} ثم نجمع",a*b*c,[(a+b)*c,a+b+c,a*b+c]),
-        ()=>const a=R(2,9),b=R(2,6),c=R(2,5);return Q("ما ناتج: $\" + ${c} \times ${b} + ${a} $",a*b*c,[(a+b)*c,a+b+c,a*b+c],"${b} و ${c} ثم نضرب",a*b+c,[n*100,n*10,n*1000,n+100,f(n/10)],"1 100 x ${n} + 100 = ُم",e],[n*100,n*10,n*1000,n+100,f(n/10)],"1 100 x ${n} + 100 = ُم",e]),
-        ()=>const d=R(2,6),m=R(2,5);let n=R(2,5);while(n==m||g(m,n)>1)n=R(2,5);return Q("${b} ${n} و ${b} ${d} ",R(2,5),"[${n}]","${b} [${n}]",f(k/10),f(k/10+n),f(+c+0.1)],
-        ()=>const a=R(2,9);let b=R(2,9);while(b==a)b=R(2,9);const c=l(a,b);return Q("ما المضاعف المشترك الأصغر للعددين ${a} و ${b}؟",c,[k+1000,f(k/1000),f(k/10),k,k*10],"${c} = 1000 \div ${k}",c,[f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div ${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/100,f(k/10),k,k*10],"1 ${c} = 1000 \div${k}",c,f(k/
+const SHEET_URL="https://script.google.com/macros/s/AKfycbx-6v2d7SWO6PlYFG17FofTGBOjhFyU4pWUJyH--WhcPZabl8dkQGiiqtJeLfR-Tmxf/exec";
+const PHONE="";
+const $=i=>document.getElementById(i),R=(a,b)=>a+Math.floor(Math.random()*(b-a+1)),P=a=>a[R(0,a.length-1)];
+const sh=a=>{for(let i=a.length-1;i>0;i--){const j=R(0,i);[a[i],a[j]]=[a[j],a[i]]}return a};
+const f=n=>String(+(+n).toFixed(2)),g=(a,b)=>b?g(b,a%b):a,l=(a,b)=>a*b/g(a,b);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function Q(u,q,c,w,e){c=String(c);const o=[c];w.map(String).forEach(x=>{if(!o.includes(x)&&o.length<4)o.push(x)});for(let k=1;o.length<4;k++){const v=f(+c+k);if(!o.includes(v))o.push(v)}const a=sh(o.slice());return{u:u,q:q,o:a,a:a.indexOf(c),e:e}}
+const U={"ج":{n:"الجبر: الأنماط العددية والدوال",l:["العوامل الأولية","القوى والأسس","ترتيب العمليات","المتغيرات والعبارات","الدوال","المعادلات"]},"إ":{n:"الإحصاء والتمثيلات البيانية",l:["التمثيل بالأعمدة والخطوط","التمثيل بالنقاط","المتوسط الحسابي","الوسيط والمنوال والمدى"]},"ع":{n:"العمليات على الكسور العشرية",l:["مقارنة الكسور العشرية وترتيبها","تقدير الناتج","جمع الكسور العشرية وطرحها","ضرب الكسور العشرية","قسمة الكسور العشرية"]},"ك":{n:"الكسور الاعتيادية والعشرية",l:["القاسم المشترك الأكبر","المضاعف المشترك الأصغر","الكسور المتكافئة وتبسيطها","مقارنة الكسور وترتيبها"]},"ق":{n:"القياس: الطول والكتلة والسعة",l:["النظام المتري","التحويل بين الوحدات"]}};
+const LV=[["🌱","الاختبار الأول: الأساسيات","تذكّر وفهم"],["🌿","الاختبار الثاني: التطبيق","مسائل مباشرة"],["🌳","الاختبار الثالث: التحليل","ربط واستنتاج"],["🚀","الاختبار الرابع: التفكير العليا","تبرير ومسائل مركبة"]];
+const T=[,[
+()=>{const b=R(2,5),e=R(2,4),c=b**e;return Q("ج",`ما قيمة ${b}<sup>${e}</sup> ؟`,c,[b*e,b+e,b**(e-1),c+b],`${b}<sup>${e}</sup> = ${Array(e).fill(b).join(" × ")} = ${c}`)},
+()=>{const a=R(2,9),b=R(2,6),c=R(2,5);return Q("ج",`ما ناتج: ${a} + ${b} × ${c} ؟`,a+b*c,[(a+b)*c,a+b+c,a*b+c,a*b*c],`نضرب أولاً: ${b} × ${c} = ${b*c} ثم نجمع: ${a+b*c}`)},
+()=>{const v=sh([...Array(30).keys()].map(x=>x+2)).slice(0,5),x=Math.max(...v),n=Math.min(...v);return Q("إ",`ما مدى القيم: ${v.join(" ، ")} ؟`,x-n,[x,n,x+n,x-n+1],`المدى = ${x} − ${n} = ${x-n}`)},
+()=>{const s=new Set;while(s.size<4)s.add(R(11,99)/100);const v=[...s],m=Math.max(...v);return Q("ع","أي الأعداد التالية هو الأكبر؟",f(m),v.filter(x=>x!=m).map(f),`نقارن الأعشار ثم الأجزاء من مئة، والأكبر ${f(m)}`)},
+()=>{const d=R(2,6),m=R(2,5);let n=R(2,5);while(n==m||g(m,n)>1)n=R(2,5);const a=d*m,b=d*n;return Q("ك",`ما القاسم المشترك الأكبر للعددين ${a} و ${b} ؟`,d,[Math.min(a,b),d*2,d+1,l(a,b)],`أكبر عدد يقسم ${a} و ${b} معاً هو ${d}`)},
+()=>{const n=R(2,9);return Q("ق",`${n} م = كم سم؟`,n*100,[n*10,n*1000,n+100,f(n/10)],`1 م = 100 سم ← ${n} × 100 = ${n*100}`)}],[
+()=>{const n=R(3,9),a=R(2,6),b=R(2,9),c=a*n+b;return Q("ج",`ما قيمة العبارة ${a}ن + ${b} عندما ن = ${n} ؟`,c,[a+n+b,a*(n+b),a*n,a*n-b],`${a} × ${n} + ${b} = ${a*n} + ${b} = ${c}`)},
+()=>{const a=R(3,15),d=R(5,30);return Q("ج",`حل المعادلة: س + ${a} = ${a+d}`,d,[a+d,a,d+1,d-1],`نطرح ${a} من الطرفين: س = ${a+d} − ${a} = ${d}`)},
+()=>{const m=R(6,15),v=[m-R(1,3),m+R(1,4),m-R(0,2),m+R(0,3)];v.push(5*m-v.reduce((x,y)=>x+y));return Q("إ",`ما المتوسط الحسابي للقيم: ${v.join(" ، ")} ؟`,m,[m+1,m-1,Math.max(...v),5*m],`المتوسط = المجموع ÷ العدد = ${5*m} ÷ 5 = ${m}`)},
+()=>{const n=R(3,9),k=R(11,59),c=f(k*n/10);return Q("ع",`ما ناتج: ${f(k/10)} × ${n} ؟`,c,[f(c*10),f(c/10),f(k/10+n),f(+c+0.1)],`${k} × ${n} = ${k*n} ثم نقسم على 10 = ${c}`)},
+()=>{const a=R(2,9);let b=R(2,9);while(b==a)b=R(2,9);const c=l(a,b);return Q("ك",`ما المضاعف المشترك الأصغر للعددين ${a} و ${b} ؟`,c,[a*b,g(a,b),a+b,Math.max(a,b)],`أصغر عدد يقبل القسمة على ${a} و ${b} هو ${c}`)},
+()=>{const k=R(2,9)*500,c=f(k/1000);return Q("ق",`${k} جم = كم كجم؟`,c,[f(k/100),f(k/10),k,k*10],`1 كجم = 1000 جم ← ${k} ÷ 1000 = ${c} كجم`)}],[
+()=>{let a=R(2,5),b=R(1,6);while(a==b)b=R(1,6);const t=[1,2,3].map(x=>a*x+b),F=(p,q)=>`ص = ${p}س + ${q}`;return Q("ج",`في الجدول: س = 1 ، 2 ، 3 تقابلها ص = ${t.join(" ، ")}. ما قاعدة الدالة؟`,F(a,b),[F(b,a),F(1,a+b),F(a+1,b),F(a,b+1)],`ص تزيد ${a} كلما زادت س بمقدار 1، وعند س = 1 تكون ص = ${a+b} ← ${F(a,b)}`)},
+()=>{const a=R(2,6),b=R(3,9),x=R(3,12),t=a*x+b;return Q("ج",`عدد ضُرب في ${a} ثم أُضيف إليه ${b} فكان الناتج ${t}. ما العدد؟`,x,[f(t/a),t-b,x+1,x*a],`س × ${a} + ${b} = ${t} ← س × ${a} = ${t-b} ← س = ${x}`)},
+()=>{const m=R(8,14),v=[m-R(1,3),m+R(1,4),m-R(0,3),m+R(0,2)],x=5*m-v.reduce((p,q)=>p+q);return Q("إ",`متوسط خمس قيم ${m}. أربع منها: ${v.join(" ، ")}. ما القيمة الخامسة؟`,x,[m,x+1,x-1,5*m],`المجموع = ${m} × 5 = ${5*m}، والخامسة = ${5*m} − ${5*m-x} = ${x}`)},
+()=>{const n=R(3,8),k=R(2,9),c=f(k/10);return Q("ع",`قُسمت ${f(k*n/10)} لتر عصير بالتساوي في ${n} أكواب. كم لتراً في كل كوب؟`,c,[f(k),f(k/100),f(k/10+0.1),f(n/10)],`${f(k*n/10)} ÷ ${n} = ${c} لتر`)},
+()=>{let b=R(3,8),d=R(3,8),a,c;while(d==b)d=R(3,8);do{a=R(1,b-1);c=R(1,d-1)}while(a*d==c*b);const A=`${a}/${b}`,C=`${c}/${d}`,big=a*d>c*b?A:C;return Q("ك",`أي الكسرين أكبر: ${A} أم ${C} ؟`,big,[big==A?C:A,"متساويان","لا يمكن المقارنة"],`نوحّد المقامين: ${a*d}/${b*d} و ${c*b}/${b*d} فالأكبر ${big}`)},
+()=>{const L=R(2,5),s=P([20,25,50]),n=L*100/s;return Q("ق",`قُطع حبل طوله ${L} م إلى قطع طول كل منها ${s} سم. كم قطعة نحصل عليها؟`,n,[n*10,f(n/10),L*s,n+L],`${L} م = ${L*100} سم ← ${L*100} ÷ ${s} = ${n} قطعة`)}],[
+()=>{const a=R(2,6),b=R(2,6),c=R(2,5);return Q("ج",`كتبت سلمى: ${a} + ${b} × ${c} = ${(a+b)*c}. ما سبب الخطأ؟`,"جمعت قبل أن تضرب",["ضربت العددين بشكل خاطئ","نسيت أن تضيف العدد "+c,"لا يوجد خطأ"],`الضرب يسبق الجمع: ${b} × ${c} = ${b*c} ثم + ${a} = ${a+b*c}`)},
+()=>{const m=R(60,90),k=R(2,9);return Math.random()<.5?Q("إ",`متوسط 5 درجات ${m}. أُضيفت درجة سادسة تساوي ${m} تماماً. ماذا يحدث للمتوسط؟`,"لا يتغير",["يزداد","يقل","يتضاعف"],`القيمة المضافة تساوي المتوسط فيبقى ${m}`):Q("إ",`متوسط 5 درجات ${m}. زيدت كل درجة بمقدار ${k}. ماذا يحدث للمتوسط؟`,`يزداد بمقدار ${k}`,[`يزداد بمقدار ${5*k}`,"لا يتغير","يتضاعف"],`كل قيمة زادت ${k} فيزيد المتوسط ${k} أيضاً`)},
+()=>{let a=R(4,12),b=R(4,12);while(a==b||g(a,b)==Math.min(a,b))b=R(4,12);const c=l(a,b);return Q("ك",`تصل حافلتان معاً إلى المحطة الآن، الأولى كل ${a} دقائق والثانية كل ${b} دقائق. بعد كم دقيقة تصلان معاً مرة أخرى؟`,c,[a+b,a*b==c?c+a:a*b,c*2,Math.max(a,b)],`نبحث عن المضاعف المشترك الأصغر للعددين ${a} و ${b} = ${c}`)},
+()=>{const k=R(2,9);return Q("ع","أي العبارات صحيحة؟",`${k} × 0.5 أصغر من ${k}`,[`${k} × 0.5 أكبر من ${k}`,`${k} × 0.5 يساوي ${k}`,`${k} × 0.5 يساوي ${k}.5`],`الضرب في عدد أصغر من 1 ينقص الناتج: ${k} × 0.5 = ${f(k/2)}`)},
+()=>{const a=R(2,5),b=R(3,a*4-2),r=(a*4-b)*250;return Q("ق",`سعة خزان ${a} لترات، ملأنا منه ${b} كوباً سعة كل كوب 250 مل. كم مل ينقص لاكتماله؟`,r,[r/10,a*1000-b,b*250,r*4],`${a} ل = ${a*1000} مل. المسكوب ${b} × 250 = ${b*250} مل. المتبقي ${a*1000} − ${b*250} = ${r} مل`)},
+()=>{const m=R(2,8),n=m+R(1,6);return Q("ج",`عددان كليان حاصل ضربهما ${m*n} ومجموعهما ${m+n}. ما الفرق بينهما؟`,n-m,[m+n,m*n,n,m],`العددان ${m} و ${n} (${m} × ${n} = ${m*n} و ${m} + ${n} = ${m+n}) ← الفرق ${n-m}`)}]];
+let st={};try{st=JSON.parse(localStorage.mn1||"{}")}catch(e){}
+st.res=st.res||{};st.name=st.name||"";st.pend=st.pend||[];
+const sv=()=>{try{localStorage.mn1=JSON.stringify(st)}catch(e){}};
+const m=$("m"),B=(t,fn,c)=>{const b=document.createElement("button");b.textContent=t;b.onclick=fn;if(c)b.className=c;return b};
+const setS=t=>{const e=$("st");if(e)e.textContent=t};
+function agg(){const a={};for(const t in st.res)for(const u in st.res[t].u){a[u]=a[u]||[0,0];a[u][0]+=st.res[t].u[u][0];a[u][1]+=st.res[t].u[u][1]}return a}
+function rank(){const a=agg();return Object.keys(a).sort((x,y)=>a[x][0]/a[x][1]-a[y][0]/a[y][1])}
+const weak=()=>{const k=rank();return k.length?U[k[0]].n:""};
+function rep(){return "تقرير نافس الرياضيات\nالطالبة: "+st.name+"\nالتاريخ: "+new Date().toLocaleDateString("ar-SA")+"\n"+[1,2,3,4].map(t=>LV[t-1][1]+": "+(st.res[t]?st.res[t].s+"/25":"لم يُنجز")).join("\n")+"\nأضعف وحدة: "+weak()+"\nالمدرسة الابتدائية السابعة والأربعون"}
+async function flush(){for(const t of [...st.pend]){const r=st.res[t];if(!r)continue;if(!SHEET_URL){setS("لم يُربط الجدول بعد؛ استخدمي واتساب أو الطباعة.");return}
+ try{await fetch(SHEET_URL,{method:"POST",mode:"no-cors",body:JSON.stringify({n:st.name.trim(),t:+t,s:r.s,o:r.o,w:weak()})});st.pend=st.pend.filter(x=>x!=t);sv();setS("✅ أُرسلت النتيجة للمعلمة")}catch(e){setS("⚠️ لم تُرسل لعدم توفر الإنترنت، ستُرسل تلقائياً لاحقاً")}}}
+function home(){m.innerHTML='<div class="np" id="cards"></div><div id="pw"></div>';
+ LV.forEach((v,i)=>{const t=i+1,r=st.res[t],d=document.createElement("div");d.className="card";
+  d.innerHTML=`<div class="hd"><span style="font-size:28px">${v[0]}</span><span><b>${v[1]}</b><br><small>${v[2]} · 25 سؤالاً</small></span><b style="margin-right:auto">${r?Math.round(r.s*4)+"%":""}</b></div>`;
+  d.appendChild(B(r?"🔁 أعيدي الاختبار":"ابدئي الاختبار",()=>start(t),"pri"));$("cards").appendChild(d)});plan()}
+function plan(){const a=agg(),k=rank(),w=$("pw");
+ if(!k.length){w.innerHTML='<div class="box np">أنهي اختباراً واحداً على الأقل لتظهر خطتك العلاجية والإثرائية.</div>';return}
+ w.innerHTML='<div class="card"><h2>📋 خطتي العلاجية والإثرائية</h2><p class="pp"><b>نافس الرياضيات · السادس الابتدائي</b></p><p>الطالبة: <b id="pn"></b> · '+new Date().toLocaleDateString("ar-SA")+'</p><div id="pu"></div><div class="np" id="pb"></div><div id="st" class="np"></div></div>';
+ $("pn").textContent=st.name;
+ k.forEach(u=>{const p=Math.round(a[u][0]*100/a[u][1]),z=p<60?["🔴 علاجي","راجعي دروس:",1]:p<85?["🟡 تعزيز","قوّي مهارة:",2]:["🟢 إثرائي","تحدّي نفسك في:",4],d=document.createElement("div");d.className="box";
+  d.innerHTML=`<b>${U[u].n}</b> — ${p}% · ${z[0]}<div class="bar"><i style="width:${p}%"></i></div><small>${z[1]} ${U[u].l.join("، ")}</small>`;
+  const b=B("✏️ تدرّبي",()=>practice(u,z[2]));b.className="np";d.appendChild(b);$("pu").appendChild(d)});
+ $("pb").append(B("📤 إرسال للمعلمة",()=>{st.pend=Object.keys(st.res).map(Number);sv();flush()},"pri"),B("📲 واتساب",()=>{window.open("https://wa.me/"+PHONE+"?text="+encodeURIComponent(rep()),"_blank")}),B("🖨️ طباعة الخطة",()=>print()))}
+function start(t){if(!st.name.trim()){alert("الرجاء كتابة اسمك الثلاثي في الحقل بالأعلى أولاً!");$("nm").focus();scrollTo(0,0);return}
+ const qs=sh(Array.from({length:25},(_,i)=>T[t][i%6]())),at={i:0};qs.forEach(q=>q.s=-1);
+ const show=()=>{const i=at.i,q=qs[i];m.innerHTML=`<div class="card"><div class="bar"><i style="width:${i*4}%"></i></div><span class="tag">${LV[t-1][1]} · س ${i+1}/25</span><h3 style="line-height:1.9">${q.q}</h3><div id="op"></div><div id="nx"></div></div>`;
+  q.o.forEach((x,j)=>{const b=B("",()=>{q.s=j;[...$("op").children].forEach((y,k)=>y.className=k==j?"pri":"");$("nx").innerHTML="";$("nx").appendChild(B(i<24?"التالي ◂":"إنهاء ✔",()=>{if(i<24){at.i++;show()}else fin(t,qs)},"pri"))});b.innerHTML=x;$("op").appendChild(b)})};show()}
+function fin(t,qs){let s=0;const u={},wr=[];qs.forEach(q=>{u[q.u]=u[q.u]||[0,0];u[q.u][1]++;if(q.s==q.a){s++;u[q.u][0]++}else wr.push(q)});
+ st.res[t]={s:s,o:25,u:u};if(!st.pend.includes(t))st.pend.push(t);sv();const p=s*4;
+ m.innerHTML=`<div class="card"><div class="big">${p>=85?"🌟":p>=60?"👍":"💪"}</div><h2 style="text-align:center">نتيجتك: ${s} من 25 (${p}%)</h2><div id="st" class="box"></div><h3>مراجعة الأخطاء</h3>`+(wr.length?wr.slice(0,12).map(q=>`<div class="box"><div>${q.q}</div><small>اخترتِ: ${q.s>=0?q.o[q.s]:"—"} · الصحيح: <b>${q.o[q.a]}</b><br>${q.e}</small></div>`).join(""):"<div class='box ok'>إجابات كلها صحيحة، أحسنتِ!</div>")+"</div>";
+ m.firstChild.appendChild(B("📋 خطتي والعودة",home,"pri"));flush()}
+function practice(u,lv){const pool=T[lv].filter(t=>t().u==u),qs=Array.from({length:5},(_,k)=>pool[k%pool.length]()),at={i:0,ok:0};
+ const show=()=>{if(at.i>=5){m.innerHTML=`<div class="card"><div class="big">🎉</div><h3 style="text-align:center">أجبتِ صحيحاً على ${at.ok} من 5</h3></div>`;m.firstChild.appendChild(B("عودة للخطة",home,"pri"));return}
+  const q=qs[at.i];m.innerHTML=`<div class="card"><span class="tag">تدريب · ${U[u].n} · ${at.i+1}/5</span><h3 style="line-height:1.9">${q.q}</h3><div id="op"></div><div id="fb"></div></div>`;
+  q.o.forEach((x,j)=>{const b=B("",e=>{if(q.d)return;q.d=1;const ok=j==q.a;if(ok)at.ok++;e.currentTarget.className=ok?"ok":"no";$("op").children[q.a].classList.add("ok");$("fb").innerHTML=`<div class="box ${ok?"":"hint"}">${ok?"✅ أحسنتِ":"❌ الصحيح: "+q.o[q.a]}<br>${q.e}</div>`;$("fb").appendChild(B("التالي ◂",()=>{at.i++;show()},"pri"))});b.innerHTML=x;$("op").appendChild(b)})};show()}
+async function dash(){if(!SHEET_URL){alert("لم يُربط الجدول بعد");return}const pin=prompt("رمز المعلمة");if(!pin)return;
+ try{const d=await (await fetch(SHEET_URL+"?pin="+encodeURIComponent(pin))).json();
+  m.innerHTML='<div class="card"><h2>🔒 لوحة المعلمة</h2><div style="overflow-x:auto"><table><tr><th>الطالبة</th><th>1</th><th>2</th><th>3</th><th>4</th><th>الأضعف</th></tr>'+(d.rows||[]).map(r=>"<tr>"+[0,1,2,3,4,5].map(i=>"<td>"+esc(r[i]||"")+"</td>").join("")+"</tr>").join("")+"</table></div></div>";
+  if(!(d.rows||[]).length)m.firstChild.append("لا توجد نتائج أو الرمز غير صحيح.");m.firstChild.appendChild(B("عودة",home,"pri"))}catch(e){alert("تعذّر الاتصال بالجدول")}}
+$("nm").value=st.name;$("nm").oninput=e=>{st.name=e.target.value;sv();const p=$("pn");if(p)p.textContent=st.name};
+$("tb").onclick=dash;addEventListener("online",flush);home();if(st.name)flush();
+</script>
+</body>
+</html>
